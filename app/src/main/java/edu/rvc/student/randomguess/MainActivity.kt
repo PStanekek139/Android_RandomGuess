@@ -15,9 +15,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Get random number 1-10000
-        var number = ((Math.random() * 10001) + 1) .toInt()
+        //var number = ((Math.random() * 10001) + 1) .toInt()
         //Get random number 0-100000
-        //var number = ((Math.random() * 100001) + 1) .toInt()
+        var number = ((Math.random() * 100001) + 1) .toInt()
         //Toast is an easy way to alert user.  Shows up on bottom of app
         Toast.makeText (this, "Number to remember: ${number}", Toast.LENGTH_LONG) .show()
         val txtGuess = findViewById<EditText>(R.id.txtGuess)
